@@ -1,3 +1,4 @@
+/* Basic CSS */
 body { margin: 0; font-family: 'Mulish', sans-serif; font-weight: 600; font-size: 18px; overflow-wrap: break-word; }
 h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
 h1 { font-weight: 800; color: #fff; font-size: 50px; }
@@ -45,6 +46,7 @@ form button { margin-top: 20px; }
 .cards .row .acqua { background-color: #43D5CB; }
 .cards .row .light-blue { background-color: #0092FF; }
 .card i { font-size: 60px; color: #fff; }
+.card .icon-image { filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(333deg) brightness(103%) contrast(105%); width: 60px; }
 
 /* Banner */
 .banner { width: 100%; height: auto; margin-top: 60px; padding: 60px 0px; background-image: url("../img/banner.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
@@ -54,7 +56,7 @@ form button { margin-top: 20px; }
 /* JS Accordion */
 .faq .block { padding: 60px 20px; }
 .faq h2 { margin-top: 0px; }
-.js-Accordion { margin: 0 auto; max-width: 800px; }
+.js-Accordion { margin: 0 auto; max-width: 1240px; }
 .js-Accordion-title { background-color: #0092FF; color: #fff; border-bottom: 2px solid #fff; border-top: 0; border-left: 0; border-right: 0; cursor: pointer; display: block; font-weight: 600; display: flex; text-align: left; font-family: 'Mulish', sans-serif; font-size: 18px; padding: 20px 30px; width: 100%; justify-content: space-between; align-items: center }
 .js-Accordion-title i { flex: 0 1 20px; font-size: 20px; text-align: left; margin-left: 20px; }
 .js-Accordion-content { border: 0; line-height: 1.5; overflow: hidden; transition: all .25s linear; font-weight: 400; padding: 0 0px 0px 10px; margin: 5px 0px }
@@ -62,6 +64,7 @@ form button { margin-top: 20px; }
 /* Footer */
 footer { background-color: #091D3E; padding: 30px 0px; }
 footer img { display: block; margin: 0 auto; margin-bottom: 20px;}
+.footer-links { text-align: center; margin-bottom: 20px; }
 footer p { margin: 0; text-align: center; }
 
 @media only screen and (max-width: 1000px){
@@ -101,4 +104,6 @@ footer p { margin: 0; text-align: center; }
     .banner h3 { font-size: 20px; }
     .banner .btn { margin: 0 auto; }
 
+    /* Cards */
+    .card p { display: none; }
 }
